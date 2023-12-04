@@ -16,7 +16,6 @@ require("connect-db.php");
 function getAllTeams($db){
   return $db->query("SELECT * FROM teams");
 }
-// Array containing MLB team details for 2022f
 $mlb_teams = getAllTeams($db);
 ?>
 
