@@ -23,7 +23,6 @@ function getAllPostSeasonData($db, $team_name){
   return $db->query("SELECT * from plays_postseason natural join postseason_series where Team_Name1 = '" . $team_name . "' or Team_Name2 = '" . $team_name . "'");
 }
 
-// Array containing MLB team details for 2022f
 $players = getAllTeamMember($db, $team_name);
 $match = getAllPostSeasonData($db, $team_name)
 ?>
