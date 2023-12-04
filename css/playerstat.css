@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.stats-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.stats-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 20%;
+}
+
+.stats-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #092c5c;
+    color: white;
+    font-size: 14px; /* Smaller font size for column names */
+    width: 5px;
+}
+
+.stats-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 16px; /* Larger font size for numbers */
+    width: 50px;
+}

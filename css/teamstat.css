@@ -1,0 +1,111 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* Table Header Styling */
+th {
+    background-color: #092c5c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Table Data Cell Styling */
+td {
+    border: 1px solid #ddd;
+    padding: 2px;
+    text-align: center;
+}
+
+/* Zebra Striping for Rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover Effect for Rows */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Input Text Boxes Styling */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 30%;
+    padding: 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Input Button Styling */
+input[type="submit"], button {
+    width: 5%;
+    background-color: #092c5c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 8px;
+}
+
+/* Styling for Buttons inside Table Cells */
+table td button {
+    background-color: #092c5c;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+table td button:hover {
+    background-color: #092c5c;
+    color: white;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #051e41;
+}
+
+/* Dropdown Menu Styling */
+select {
+    width: 20%;
+    padding: 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    table, input[type="text"], input[type="email"], input[type="password"], select {
+        width: 100%;
+    }
+
+    input[type="submit"], button {
+        width: 100%;
+    }
+}

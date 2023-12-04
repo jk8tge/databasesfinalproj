@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #add8e6; /* Light blue background */
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black; /* Black text for menu items */
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: white; /* White background on hover/focus */
+    color: black; /* Black text on hover/focus */
+    border-radius: 4px;
+}
+
+/* Right Aligned Items */
+.logout-button, .username-display {
+    float: right;
+    margin-right: 20px;
+}
+
+/* Clear float */
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Updated styles for username display */
+.username-display {
+    float: right;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Example font */
+    color: #FFFFFF; /* Updated color to white */
+    font-size: 30px; /* Example font size */
+}
+
+.username-display a {
+    color: #FFFFFF; /* Ensuring the link color is white */
+}
+
+/* Adding a hover effect for interactivity */
+.username-display a:hover {
+    color: #CCCCCC; /* Lighter shade for hover effect */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: left;
+        padding: 8px;
+    }
+
+    .logout-button, .username-display {
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+}
